@@ -1,0 +1,27 @@
+﻿@model PengelolaanPegawai.Models.Divisi
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Divisi</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NamaDivisi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NamaDivisi)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DivisiId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
